@@ -33,6 +33,7 @@ module.exports = {
       secret: sails.config.custom.awsSecret,
       bucket: sails.config.custom.bucket,
       region: sails.config.custom.awsRegions || 'us-east-1',
+      // Allows the file to be viewed by the public.
       headers: { 'x-amz-acl': 'public-read' }
     }, (err, uploadedFiles) => {
       if (err) {
