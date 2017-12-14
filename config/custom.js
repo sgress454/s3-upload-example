@@ -11,6 +11,7 @@
 module.exports.custom = {
 
   awsApiKey: process.env.AWS_API_KEY,
-  awsSecret: process.env.AWS_SECRET
+  awsSecret: process.env.AWS_SECRET,
+  bucket: process.env.BUCKET
 
 };
